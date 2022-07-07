@@ -1,4 +1,16 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+console.log('hello world');
 
-console.log("Hello, world!");
+let test = document.getElementById('test')
+let counter = document.getElementById("counter")
+
+
+
+function doStuff(){
+  
+  test.innerHTML = "this a test Bitch!"
+  
+  
+  
+  
+}
+
