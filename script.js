@@ -38,9 +38,11 @@ erase.addEventListener("click", function(){
   
 })
 
+let Delete = document.getElementById('Delete')
 
-delete.addEventListener("click", function(){
-
+Delete.addEventListener("click", function(){
+   x-=1
+  counter.innerHTML = x 
 })
 
 
