@@ -24,11 +24,16 @@ video {
   max-width: 100%;
 }
 
-#butt{
+button{
   padding: 1em 3em;
   border: none;
 }
 
-#butt:active{
+button:active{
   box-shadow: 2px 2px 5px #fc894d;
+}
+
+#test{
+  display: flex;
+  justify-content: center;
 }
