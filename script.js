@@ -12,6 +12,24 @@ function doStuff(){
   counter.innerHTML = x
   
 }
-/*
+*/
 
 
+butt.addEventListener("click", function(){
+  
+  x+=1
+  counter.innerHTML = x 
+  
+  
+})
+
+
+butt.addEventListener("mouseover", function(){
+  
+  const colors = ["red", "green", "blue"]
+  
+  let i = Math.floor(Math.random() * 3);
+  
+  butt.style.background = colors[i]
+  
+})

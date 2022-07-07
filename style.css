@@ -23,3 +23,12 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+#butt{
+  padding: 1em 3em;
+  border: none;
+}
+
+#butt:active{
+  box-shadow: 2px 2px 5px #fc894d;
+}
