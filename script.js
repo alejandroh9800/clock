@@ -11,9 +11,11 @@
 }
 */
 
+let x = 0
+
+
 let counter = document.getElementById('counter')
 let butt = document.getElementById('butt')
-let x = 0
   
 butt.addEventListener("click", function(){
   
@@ -26,32 +28,51 @@ butt.addEventListener("click", function(){
 
 
 
-
-
-
-
-
-
-
-//////////////////////////////////////////////////////
-
-
 let erase = document.getElementById('Erase')
 
 
 erase.addEventListener("click", function(){
   
-  x=0
+  x = 0
   counter.innerHTML = x
   
 })
 
 
+delete.addEventListener("click", function(){
 
+})
 
 
 
 ///////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 butt.addEventListener("mouseover", function(){
