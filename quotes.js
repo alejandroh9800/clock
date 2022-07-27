@@ -167,4 +167,8 @@ function openWeather(obj){
   
 }
 
-console.log(APPIDKEY)
+require('dotenv').config()
+
+const API_KEY = process.env.APIKEYWEATHERAPP
+
+console.log(API_KEY)
