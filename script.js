@@ -19,7 +19,7 @@ function startTime() {
   let minute = m;
   let minuteHand = document.getElementById("minuteHand");
 
-  moveBigHands(hour, hourHand);
+  moveBigHandV3(hour, hourHand);
   moveSmallHand(minute, minuteHand);
 
   setTimeout(startTime, 1000);
@@ -36,44 +36,43 @@ function moveBigHandV1(x,y){
  y.style.transition = "all 4s linear";
   
   if(x === 1){
-  
      y.style.transform = "rotate(30deg)";
   }
   else if(x === 2){
     
-     y.style.transform = "rotate(30deg)";
-    
+     y.style.transform = "rotate(60deg)";
   }
   else if(x === 3){
-    
+     
+    y.style.transform = "rotate(90deg)"; 
   }
   else if(x === 4){
-    
+     y.style.transform = "rotate(120deg)";
   }
   else if(x === 5){
-    
+     y.style.transform = "rotate(150deg)";
   }
   else if(x === 6){
-    
+     y.style.transform = "rotate(180deg)";
   }
   else if(x === 7){
-    
+     y.style.transform = "rotate(210deg)";
   }
   else if(x === 8){
-    
+     y.style.transform = "rotate(240deg)";
   }
   else if(x === 9){
-    
+     y.style.transform = "rotate(270deg)";
   }  
   
   else if(x === 10){
-    
+     y.style.transform = "rotate(300deg)";
   }
   else if(x === 11){
-    
+     y.style.transform = "rotate(330deg)";
   }
   else if(x === 12){
-    
+     y.style.transform = "rotate(360deg)";
   }
 }
 
@@ -117,7 +116,7 @@ function moveBigHandV2(x, y) {
   }
 }
 
-function moveBigHands(x, y){
+function moveBigHandV3(x, y){
   y.style.transition = "all 4s linear";
   
   let degrees = x * 30;
