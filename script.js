@@ -18,9 +18,11 @@ function startTime() {
   let hourHand = document.getElementById("hourHand");
   let minute = m;
   let minuteHand = document.getElementById("minuteHand");
+  let second = document.getElementById("secondHand");
 
   moveBigHandV3(hour, hourHand);
   moveSmallHand(minute, minuteHand);
+  //moveSmallHand(s,second)
 
   setTimeout(startTime, 1000);
 }
@@ -131,3 +133,11 @@ function moveSmallHand(x, y) {
   let deg = degrees + "deg";
   y.style.transform = `rotate(${deg})`;
 }
+
+/*
+function moveSmallestHand(x,y){
+  y.style.transition = "all 0.5 linear";
+  
+  let degrees = x
+}
+*/
