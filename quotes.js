@@ -174,17 +174,17 @@ function openWeather(obj){
 
 async function randomUser(){
   
-  const requestURL = 'https://randomuser.me/api/'
+  const requestURL = 'https://randomuser.me/api/' // what is the url of the api
   
-  const request = new Request(requestURL)
+  const request = new Request(requestURL) // get the url that was requested
   
   const response = await fetch(request) // wait for the api page to load
 
-  const obj = await response.json() // wait for the JSON
+  const obj = await response.json() // get json object from api
    
-  //appendInfo(obj) // call to append info to page
+  appendInfo(obj) // call to append specific json objects to page
   
-  console.log(obj.results[0].picture.medium)
+  //console.log(obj.results[0].picture.medium)
   
 }
 
@@ -193,13 +193,15 @@ randomUser()
 
 function appendInfo(obj){
   
-  const header = document.getElementById('head')
-  const userImage = document.getElementById('weather')
+  const header = document.getElementById('head') // get header by id
+  const userImage = document.getElementById('weather') // get image tag by id
+  const myName = document.getElementById('weather-txt') // get div by id
     
-  userImage.src = obj.results.picture.large
+  userImage.src = obj.results[0].picture.large // request user image src from JSON object
   
-  header.appendChild(userImage)
+  myName.textContent = obj.results[0].name.title + ". " + obj.results[0].name.first + " " + obj.results[0].name.last // request first and last name from json object
   
-  console.log(obj.results.picture.medium)
+  header.appendChild(userImage) // add i
+  header.appendChild(myName)
 
 }
