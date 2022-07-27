@@ -154,13 +154,13 @@ function openWeather(obj){
   
   const header = document.getElementById('head')
   const weather = document.getElementById('weather');
-  weather.textContent = obj.data.content;
+  weather.textContent = obj.timezone;
   header.appendChild(weather);
+    
+  //const myName = document.getElementById('weather-txt');
   
-  const myName = document.getElementById('weather-txt');
+  //myName.textContent = "-" + obj.timezone + " " + obj.data.character.lastname;
+  //header.appendChild(myName)
   
-  myName.textContent = "-" + obj.timezone + " " + obj.data.character.lastname;
-  header.appendChild(myName)
-  
-
 }
+
