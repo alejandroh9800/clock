@@ -16,12 +16,22 @@ function Quotes(){
   let random = Math.floor(Math.random() * (quotes.length))
   
   let d = document.getElementById('quote')
+  
+  //d.style.transition = "filter 1s ease"
+
+  //d.style.filter = "blur(0px)"
     
   d.innerHTML = quotes[random]
   
-  d.style.transition = "filter 1s ease"
-
+  /*
+  setTimeout(()=>{
+    
+      d.style.transition = "filter 1s ease"
+      d.style.filter = "blur(1px)"
+    
+  },7000)
+*/
   
 }
 Quotes()
-setInterval(Quotes,5000)
+//setInterval(Quotes,8000)
