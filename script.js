@@ -18,11 +18,12 @@ function startTime() {
   let hourHand = document.getElementById("hourHand");
   let minute = m;
   let minuteHand = document.getElementById("minuteHand");
-  let second = document.getElementById("secondHand");
+  let secondHand = document.getElementById("secondHand");
+  let second = s;
 
-  moveBigHandV1(hour, hourHand); //////////////////////////////////////
+  moveBigHandV3(hour, hourHand); 
   moveSmallHand(minute, minuteHand);
-  moveSmallHand(s,second)
+  moveSmallerHand(second, secondHand);
 
   setTimeout(startTime, 1000);
 }
@@ -33,6 +34,40 @@ function checkTime(i) {
   } // add zero in front of numbers < 10
   return i;
 }
+
+function moveBigHandV3(x, y){
+  
+  y.style.transition = "all 4s linear";
+  
+  let degrees = x * 30;
+  let deg = degrees + "deg";
+  y.style.transform = `rotate(${deg})`;
+  
+}
+
+
+
+function moveSmallHand(x, y) {
+  
+  y.style.transition = "all 1s linear";
+
+  let degrees = x * 6;
+  let deg = degrees + "deg";
+  y.style.transform = `rotate(${deg})`;
+  
+}
+
+function moveSmallerHand(x, y) {
+  
+  let degrees = x * 6;
+  let deg = degrees + "deg";
+  y.style.transform = `rotate(${deg})`;
+  
+}
+
+
+
+/*
 
 function moveBigHandV1(x,y){
   
@@ -120,23 +155,4 @@ function moveBigHandV2(x, y) {
       break;
   }
 }
-
-function moveBigHandV3(x, y){
-  
-  y.style.transition = "all 4s linear";
-  
-  let degrees = x * 30;
-  let deg = degrees + "deg";
-  y.style.transform = `rotate(${deg})`;
-}
-
-
-
-function moveSmallHand(x, y) {
-  
-  y.style.transition = "all 1s linear";
-
-  let degrees = x * 6;
-  let deg = degrees + "deg";
-  y.style.transform = `rotate(${deg})`;
-}
+*/
