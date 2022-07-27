@@ -139,7 +139,7 @@ geoFindMe()
 
 async function populateWeather(lat,lon) {  
   
-  const requestURL2 = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid={50e88b21b91f0c3ad6ee472d09408955}`
+  const requestURL2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=50e88b21b91f0c3ad6ee472d09408955`
   //https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
   const request = new Request(requestURL2);
 
@@ -148,6 +148,8 @@ async function populateWeather(lat,lon) {
 
   openWeather(obj);
   //populateHeroes(officeQuotes);
+  
+  console.log(obj)
 }
 
 function openWeather(obj){
