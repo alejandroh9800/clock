@@ -122,7 +122,7 @@ function geoFindMe() {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
     
-    reverseGeocodingWithGoogle(latitude, longitude)
+    //reverseGeocodingWithGoogle(latitude, longitude)
     console.log(latitude, longitude)
     
   }
@@ -135,14 +135,9 @@ function geoFindMe() {
 
 geoFindMe()
 
-function reverseGeocodingWithGoogle(latitude, longitude) {
-  fetch(`https://maps.googleapis.com/maps/api/geocode/json?
-      latlng=${latitude},${longitude}&key={AIzaSyCHIhMTKBiYF_GfWe50pT4hC7zowOZXyOE}`)
-  .then( res => res.json())
-  .then(response => {
-      console.log("User's Location Info: ", response)
-   })
-   .catch(status => {
-      console.log('Request failed.  Returned status of', status)
-   })
+
+function openWeather(lat,lon){
+  
+  const requestURL2 =
+
 }
