@@ -7,13 +7,42 @@
     <title>Hello world!</title>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <div id="test">
-    <button id="butt" >Counter<p id="counter"></p></button>
-    <button id="Delete">Delete</button>
-    <button id="Erase">Erase</button>
+ 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+  </style>
+    
+ </head>
+  
+<body onload="startTime()">
+
+  <div class="flex-div" style="display:flex; justify-content: center; flex-direction: column; align-items: center;">
+
+    <div style="background: black; width: 250px; height: 250px; border-radius: 50%; position: relative; overflow: hidden;">
+
+      <div id="twelveGuide" style="background: white; height: 10px; width: 10px; border-radius: 100%; position: absolute; top: 10px; left: 117px; z-index: 2;"></div>
+
+      <div id="hourHand" class="hour-hand" style="background: none; width: 6px; height: 150px; position: absolute; left: 120px; top: 45px; z-index: 5; overflow: hidden;">
+
+        <img src="https://cdn.glitch.global/6135496d-e9d1-4269-85a8-5eca40d122c0/New%20Piskel-1.png(9).png?v=1658880365460"><img>
+
+        <!--<div style="width:20px; height: 100px; background: black; bottom: 0; right: 0px; position: absolute; overflow: hidden; z-index: 3;"></div> -->
+      </div>
+
+      <div id="minuteHand" class="minute-hand" style="background: none; width: 4px; height: 200px; position: absolute; left: 120px; bottom: 29px; transform: rotate(0deg) z-index: 4;">
+
+        <img src="https://cdn.glitch.global/6135496d-e9d1-4269-85a8-5eca40d122c0/New%20Piskel-1.png(10).png?v=1658880990218"><img>
+
+        <!--<div style="width:5px; height: 110px; background: black; bottom: 0; right: 0px; position: absolute; overflow: hidden; z-index: 2;"></div>-->
+      </div>
+
+      <div style="background: white; height: 20px; width: 20px; position: absolute; border-radius: 50%; top: 110px; left: 113px; z-index: 6;"></div>
+
     </div>
+
+    <h2 id="txt"></h2>
+
+  </div>
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </body>
