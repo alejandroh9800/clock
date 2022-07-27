@@ -113,3 +113,36 @@ function populateHeroes(obj) {
 }
 */
 
+function geoFindMe() {
+  if (!navigator.geolocation){
+   console.log("Geolocation is not supported by your browser");
+    return;
+  }
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    
+    reverseGeocodingWithGoogle(latitude, longitude)
+    console.log(latitude, longitude)
+    
+  }
+                
+  function error() {
+    console.log("Unable to retrieve your location");
+  }
+  navigator.geolocation.getCurrentPosition(success, error);
+}
+
+geoFindMe()
+
+function reverseGeocodingWithGoogle(latitude, longitude) {
+  fetch(`https://maps.googleapis.com/maps/api/geocode/json?
+      latlng=${latitude},${longitude}&key={AIzaSyCHIhMTKBiYF_GfWe50pT4hC7zowOZXyOE}`)
+  .then( res => res.json())
+  .then(response => {
+      console.log("User's Location Info: ", response)
+   })
+   .catch(status => {
+      console.log('Request failed.  Returned status of', status)
+   })
+}
