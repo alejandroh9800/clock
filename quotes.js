@@ -15,8 +15,13 @@ function Quotes(){
   
   let random = Math.floor(Math.random() * (quotes.length))
   
-  document.getElementById('quote').innerHTML = quotes[random]
+  let d = document.getElementById('quote')
+    
+  d.innerHTML = quotes[random]
+  
+  d.style.transition = "filter 1s ease"
+
   
 }
-
 Quotes()
+setInterval(Quotes,5000)
