@@ -9,14 +9,14 @@ let quotes = [
   '\“I run a small fake ID company from my car with a laminating machine that I swiped from the Sheriff’s station.\” — Creed Bratton',
   '\“Guess what, I have flaws. What are they? Oh, I don’t know. I sing in the shower. Sometimes I spend too much time volunteering. Occasionally I’ll hit somebody with my car. So sue me.\” — Michael Scott',
   '\“The worst thing about prison was the dementors.\” — Michael Scott',
-  '\“Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked, but it’s not like this compulsive need to be liked, like my need to be praised.” — Michael Scott\"',
-  '\“I don’t care what they say about me. I just want to eat. Which I realize is a lot to ask for…at a dinner party.” — Pam Beesley\"',
-  '\“No, Rose, they are not breathing. And they have no arms or legs… Where are they? You know what? If we come across somebody with no arms or legs, do we bother resuscitating them? I mean, what quality of life do we have there?” – Michael Scott\"',
-  '\“I wonder what people like about me. Probably my jugs.” — Phyllis Lapin-Vance\"',
-  '\“Today, smoking is going to save lives.” — Dwight Schrute\"',
-  '\“I am running away from my responsibilities. And it feels good.” — Michael Scott\"'
-  '\“If I were buying my coffin, I would get one with thicker walls so you couldn’t hear the other dead people.” — Dwight Schrute\"',
-  '\'
+  '\“Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked, but it’s not like this compulsive need to be liked, like my need to be praised.\” — Michael Scott',
+  '\“I don’t care what they say about me. I just want to eat. Which I realize is a lot to ask for…at a dinner party.\” — Pam Beesley',
+  '\“No, Rose, they are not breathing. And they have no arms or legs… Where are they? You know what? If we come across somebody with no arms or legs, do we bother resuscitating them? I mean, what quality of life do we have there?\” – Michael Scott',
+  '\“I wonder what people like about me. Probably my jugs.\” — Phyllis Lapin-Vance',
+  '\“Today, smoking is going to save lives.\” — Dwight Schrute',
+  '\“I am running away from my responsibilities. And it feels good.\” — Michael Scott',
+  '\“If I were buying my coffin, I would get one with thicker walls so you couldn’t hear the other dead people.\” — Dwight Schrute',
+  '\“Dwight you ignorant sl*t.\” — Michael Scott'
 ]
 
 function Quotes(){
