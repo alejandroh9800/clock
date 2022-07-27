@@ -75,6 +75,8 @@ function populateHeader(obj) {
   */
 }
 
+populate();
+
 /*
 function populateHeroes(obj) {
   const section = document.querySelector("section");
@@ -111,4 +113,3 @@ function populateHeroes(obj) {
 }
 */
 
-populate();
