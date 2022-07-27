@@ -51,7 +51,7 @@ async function populate() {
   const request = new Request(requestURL);
 
   const response = await fetch(request);
-  const officeQuotes = await response.json();
+  const officeQuotes = await response.json();  
 
   populateHeader(officeQuotes);
   //populateHeroes(officeQuotes);
@@ -122,7 +122,7 @@ function geoFindMe() {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
     
-    //reverseGeocodingWithGoogle(latitude, longitude)
+    populateWeather(latitude, longitude)
     console.log(latitude, longitude)
     
   }
@@ -136,8 +136,21 @@ function geoFindMe() {
 geoFindMe()
 
 
+
+async function populateWeather(lat,lon) {
+  const requestURL = "https://www.officeapi.dev/api/quotes/random";
+  //https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
+  const request = new Request(requestURL);
+
+  const response = await fetch(request);
+  const officeQuotes = await response.json();  
+
+  openWeather(lat,lon);
+  //populateHeroes(officeQuotes);
+}
+
 function openWeather(lat,lon){
   
-  const requestURL2 =
+  const requestURL2 = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid={50e88b21b91f0c3ad6ee472d09408955}`
 
 }
