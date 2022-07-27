@@ -166,9 +166,3 @@ function openWeather(obj){
   header.appendChild(myName)
   
 }
-
-require('dotenv').config()
-
-const API_KEY = process.env.APIKEYWEATHERAPP
-
-console.log(API_KEY)
