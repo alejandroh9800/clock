@@ -113,6 +113,9 @@ function populateHeroes(obj) {
 }
 */
 
+/*
+
+
 function geoFindMe() {
   if (!navigator.geolocation){
    console.log("Geolocation is not supported by your browser");
@@ -166,3 +169,5 @@ function openWeather(obj){
   header.appendChild(myName)
   
 }
+
+*/
