@@ -182,7 +182,7 @@ async function randomUser(){
 
   const obj = await response.json() // wait for the JSON
    
-  //appendInfo(obj) // call to append info to page
+  appendInfo(obj) // call to append info to page
   
   console.log(obj)
   
@@ -195,7 +195,11 @@ function appendInfo(obj){
   
   const header = document.getElementById('head')
   const userImage = document.getElementById('weather')
+    
+  userImage.src = obj.results.picture.large
   
-  userImage.textContent = obj.results.
+  header.appendChild(userImage)
+  
+  console.log(obj.results.picture.large)
 
 }
