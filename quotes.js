@@ -184,7 +184,7 @@ async function randomUser(){
    
   //appendInfo(obj) // call to append info to page
   
-  console.log(obj.results)
+  console.log(obj.results[0].picture.medium)
   
 }
 
@@ -200,6 +200,6 @@ function appendInfo(obj){
   
   header.appendChild(userImage)
   
-  console.log(obj.results.picture.large)
+  console.log(obj.results.picture.medium)
 
 }
