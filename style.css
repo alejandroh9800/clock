@@ -6,3 +6,10 @@ html {
 #quote{
   cursor: pointer;
 }
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 24px;
+  padding: 10px 20px;
+}

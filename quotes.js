@@ -59,14 +59,14 @@ async function populate() {
 
 function populateHeader(obj) {
   const header = document.querySelector("header");
-  const myH1 = document.getElementById('hi');
-  myH1.textContent = obj.data.content;
-  header.appendChild(myH1);
+  const myQuote = document.getElementById('quotes');
+  myQuote.textContent = obj.data.content;
+  header.appendChild(myQuote);
   
-  const myH2 = document.getElementById('hi2');
+  const myName = document.getElementById('name');
   
-  myH2.textContent = obj.data.character.firstname + ;
-  header.appendChild(myH2)
+  myName.textContent = "-" + obj.data.character.firstname + " " + obj.data.character.lastname;
+  header.appendChild(myName)
   
 /*
   const myPara = document.createElement("p");
