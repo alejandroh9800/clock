@@ -137,20 +137,30 @@ geoFindMe()
 
 
 
-async function populateWeather(lat,lon) {
-  const requestURL = "https://www.officeapi.dev/api/quotes/random";
+async function populateWeather(lat,lon) {  
+  
+  const requestURL2 = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid={50e88b21b91f0c3ad6ee472d09408955}`
   //https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
-  const request = new Request(requestURL);
+  const request = new Request(requestURL2);
 
   const response = await fetch(request);
-  const officeQuotes = await response.json();  
+  const obj = await response.json();  
 
-  openWeather(lat,lon);
+  openWeather(obj);
   //populateHeroes(officeQuotes);
 }
 
-function openWeather(lat,lon){
+function openWeather(obj){
   
-  const requestURL2 = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid={50e88b21b91f0c3ad6ee472d09408955}`
+  const header = document.getElementById('head')
+  const weather = document.getElementById('weather');
+  weather.textContent = obj.data.content;
+  header.appendChild(weather);
+  
+  const myName = document.getElementById('weather-txt');
+  
+  myName.textContent = "-" + obj.timezone + " " + obj.data.character.lastname;
+  header.appendChild(myName)
+  
 
 }
