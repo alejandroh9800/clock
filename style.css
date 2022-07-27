@@ -7,7 +7,7 @@ html {
   cursor: pointer;
 }
 
-div {
+header > div {
   text-align: justify;
   text-justify: inter-word;
   font-size: 24px;
