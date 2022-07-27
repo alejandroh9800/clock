@@ -182,9 +182,9 @@ async function randomUser(){
 
   const obj = await response.json() // wait for the JSON
    
-  appendInfo(obj) // call to append info to page
+  //appendInfo(obj) // call to append info to page
   
-  console.log(obj)
+  console.log(obj.results)
   
 }
 
