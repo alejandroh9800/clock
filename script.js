@@ -20,9 +20,9 @@ function startTime() {
   let minuteHand = document.getElementById("minuteHand");
   let second = document.getElementById("secondHand");
 
-  moveBigHandV3(hour, hourHand);
+  moveBigHandV1(hour, hourHand); //////////////////////////////////////
   moveSmallHand(minute, minuteHand);
-  //moveSmallHand(s,second)
+  moveSmallHand(s,second)
 
   setTimeout(startTime, 1000);
 }
@@ -35,6 +35,7 @@ function checkTime(i) {
 }
 
 function moveBigHandV1(x,y){
+  
  y.style.transition = "all 4s linear";
   
   if(x === 1){
@@ -78,6 +79,8 @@ function moveBigHandV1(x,y){
   }
 }
 
+
+
 function moveBigHandV2(x, y) {
   y.style.transition = "all 4s linear";
 
@@ -119,6 +122,7 @@ function moveBigHandV2(x, y) {
 }
 
 function moveBigHandV3(x, y){
+  
   y.style.transition = "all 4s linear";
   
   let degrees = x * 30;
@@ -126,18 +130,13 @@ function moveBigHandV3(x, y){
   y.style.transform = `rotate(${deg})`;
 }
 
+
+
 function moveSmallHand(x, y) {
+  
   y.style.transition = "all 1s linear";
 
   let degrees = x * 6;
   let deg = degrees + "deg";
   y.style.transform = `rotate(${deg})`;
 }
-
-/*
-function moveSmallestHand(x,y){
-  y.style.transition = "all 0.5 linear";
-  
-  let degrees = x
-}
-*/
