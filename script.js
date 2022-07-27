@@ -45,8 +45,6 @@ function moveBigHandV3(x, y){
   
 }
 
-
-
 function moveSmallHand(x, y) {
   
   y.style.transition = "all 1s linear";
@@ -64,8 +62,6 @@ function moveSmallerHand(x, y) {
   y.style.transform = `rotate(${deg})`;
   
 }
-
-
 
 /*
 
