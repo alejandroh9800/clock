@@ -171,3 +171,31 @@ function openWeather(obj){
 }
 
 */
+
+async function randomUser(){
+  
+  const requestURL = 'https://randomuser.me/api/'
+  
+  const request = new Request(requestURL)
+  
+  const response = await fetch(request) // wait for the api page to load
+
+  const obj = await response.json() // wait for the JSON
+   
+  //appendInfo(obj) // call to append info to page
+  
+  console.log(obj)
+  
+}
+
+randomUser()
+
+
+function appendInfo(obj){
+  
+  const header = document.getElementById('head')
+  const userImage = document.getElementById('weather')
+  
+  userImage.textContent = obj.results.
+
+}
