@@ -188,7 +188,7 @@ async function randomUser(){
   
 }
 
-randomUser()
+randomUser() // call to run the get request function
 
 
 function appendInfo(obj){
@@ -201,7 +201,7 @@ function appendInfo(obj){
   
   myName.textContent = obj.results[0].name.title + ". " + obj.results[0].name.first + " " + obj.results[0].name.last // request first and last name from json object
   
-  header.appendChild(userImage) // add i
-  header.appendChild(myName)
+  header.appendChild(userImage) // add image to header parent
+  header.appendChild(myName) // add first and last name to header parent 
 
 }
