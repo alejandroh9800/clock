@@ -44,7 +44,7 @@ function Quotes(){
 Quotes()
 */
 //setInterval(Quotes,8000)
-
+/*
 async function populate() {
   const requestURL = "https://www.officeapi.dev/api/quotes/random";
   //https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
@@ -72,11 +72,11 @@ function populateHeader(obj) {
   const myPara = document.createElement("p");
   myPara.textContent = `Hometown: ${obj.homeTown} // Formed: ${obj.formed}`;
   header.appendChild(myPara);
-  */
+
 }
 
 populate();
-
+  */
 /*
 function populateHeroes(obj) {
   const section = document.querySelector("section");
@@ -170,7 +170,7 @@ function openWeather(obj){
   
 }
 
-*/
+
 
 async function randomUser(){
   
@@ -204,4 +204,4 @@ function appendInfo(obj){
   header.appendChild(userImage) // add image to header parent
   header.appendChild(myName) // add first and last name to header parent 
 
-}
+}*/
