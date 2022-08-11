@@ -63,6 +63,9 @@ function moveSmallerHand(x, y) {
   
 }
 
+$('img').attr('draggable', false);
+
+
 /*
 
 function moveBigHandV1(x,y){
